@@ -1,1 +1,13 @@
-/ 100
+75 / 100
+
+-5: No example of a command with greater than 10 parameters
+-5: No example of executing a program in the current working directory
+
+-5: Does not exhaustively test the connectors (No example of && with first argument false)
+
+-5: No example of exit with parameters
+-5: No example of exit as a parameter to another command
+-5: No example of exit in a chain of commands
+
+-5: No example of comment on a line by itself
+
