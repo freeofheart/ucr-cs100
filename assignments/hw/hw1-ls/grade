@@ -1,5 +1,39 @@
- 0    / 100  
+ 75 / 100
 
--100: there are .o files in the repo, and they are too big. I could not download it, ran out of space. 
+-5x5: no error checking for syscalls (-5 for each syscall, see checksyscalls output)
+
+
+checksyscalls output:
+
+
+file: [src/main.cpp]
+  lines with syscalls:
+  
+  043:  [1;31m[K=getcwd(buf,MAXLINE)[m[K
+  112:  [1;31m[K opendir(dir_name[i2])[m[K
+  114:  [1;32m[Kperror()[m[K;
+  120:  [1;31m[K readdir(dirptr)[m[K
+  149:  [1;31m[K(closedir(dirptr)[m[K
+  151:  [1;32m[Kperror()[m[K;
+  190:  [1;31m[K opendir(dir_name[i2])[m[K
+  192:  [1;32m[Kperror()[m[K;
+  198:  [1;31m[K readdir(dirptr)[m[K
+  232:  [1;31m[K(closedir(dirptr)[m[K
+  234:  [1;32m[Kperror()[m[K;
+  279:  [1;31m[K opendir(dir_name[i2])[m[K
+  281:  [1;32m[Kperror()[m[K;
+  287:  [1;31m[K readdir(dirptr)[m[K
+  333:  [1;31m[K(closedir(dirptr)[m[K
+  335:  [1;32m[Kperror()[m[K;
+  376:  [1;31m[K opendir(dir_name[i2])[m[K
+  378:  [1;32m[Kperror()[m[K;
+  384:  [1;31m[K readdir(dirptr)[m[K
+  429:  [1;31m[K(closedir(dirptr)[m[K
+  431:  [1;32m[Kperror()[m[K;
+
+summary:
+  number of syscalls... 13
+  number of perror..... 8
+  grade modifier....... -25
 
 
